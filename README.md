@@ -4,6 +4,9 @@ buat database terlebih dahulu
 ketikkan query :
 ```
 CREATE DATABASE "todolist_db"
+```
+Lalu di dalam database todolis_db ketik query :
+```
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(20) NOT NULL UNIQUE,
