@@ -4,7 +4,7 @@ buat database terlebih dahulu
 ketikkan query :
 ```
 CREATE DATABASE "todolist_db"
-CREATE TABLE users ( </br>
+CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(20) NOT NULL UNIQUE,
   password VARCHAR(20) NOT NULL,
