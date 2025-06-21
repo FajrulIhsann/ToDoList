@@ -4,12 +4,18 @@ Proyek ini merupakan proyek belajar saya untuk memahami bahasa php. Proyek ini m
 Di bawah ini adalah langkah langkah untuk menggunakan repository nya 
 
 # Step Pertama
+Clone repository ini ke server kalian
+```
+git clone https://github.com/FajrulIhsann/ToDoList
+```
+# Step Kedua
+
 buat database terlebih dahulu
 ketikkan query :
 ```
 CREATE DATABASE "todolist_db"
 ```
-Lalu di dalam database todolis_db ketik query :
+Lalu di dalam database todolist_db ketik query :
 ```
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -25,10 +31,5 @@ CREATE TABLE todos (
     status ENUM('pending', 'done') DEFAULT 'pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-```
-# Step Kedua
-Clone repository ini ke server kalian
-```
-git clone https://github.com/FajrulIhsann/ToDoList
 ```
 
