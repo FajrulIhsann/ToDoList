@@ -1,5 +1,9 @@
 # ToDoList
+Proyek ini merupakan proyek belajar saya untuk memahami bahasa php. Proyek ini merupakan proyek pertama php saya jadi pasti akan banyak kekurangan bahkan merupakan proyek yang sangat berantakan.
 
+Di bawah ini adalah langkah langkah untuk menggunakan repository nya 
+
+# Step Pertama
 buat database terlebih dahulu
 ketikkan query :
 ```
@@ -22,3 +26,9 @@ CREATE TABLE todos (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+# Step Kedua
+Clone repository ini ke server kalian
+```
+git clone https://github.com/FajrulIhsann/ToDoList
+```
+
