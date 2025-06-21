@@ -1,7 +1,8 @@
 # ToDoList
 
 buat database terlebih dahulu
-ketikkan query :</br>
+ketikkan query :
+```
 CREATE DATABASE "todolist_db"
 CREATE TABLE users ( </br>
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -17,3 +18,4 @@ CREATE TABLE todos (
     status ENUM('pending', 'done') DEFAULT 'pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
