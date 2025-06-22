@@ -51,7 +51,7 @@ $todos = mysqli_query($conn, "SELECT * FROM todos WHERE user_id = {$_SESSION['us
                     <li class="bg-white p-4 rounded shadow flex justify-between items-center">
                     <form action="service/checkToggle.php" method="post" class="flex items-center gap-2">
                         <input type="hidden" name="id" value="<?= $row['id'] ?>">
-                        <input type="checkbox" name="status" onchange="this.form.submit()" <?= $row['status'] === 'done' ? 'checked' : '' ?>>
+                        <input type="checkbox" class="cursor-pointer hover:scale-125 transition-all transition-discrete" name="status" onchange="this.form.submit()" <?= $row['status'] === 'done' ? 'checked' : '' ?>>
                          <span class="transition-all duration-300 <?= $row['status'] === 'done' ? 'line-through text-gray-500' : '' ?>">
                                <?= htmlspecialchars($row['task']) ?>
                           </span>
