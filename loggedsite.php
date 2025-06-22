@@ -28,7 +28,7 @@ $todos = mysqli_query($conn, "SELECT * FROM todos WHERE user_id = {$_SESSION['us
     <?php include "layout/nav-2.html"?>
     <div class=" min-h-screen flex flex-row p-6">
         <!-- Profile Section -->
-        <div class="w-1/3 bg-white rounded-lg shadow-md" >
+        <div class="w-1/3 bg-white rounded-lg shadow-md hidden md:block" >
            <div class="text-center bg-[#1a0730] p-3 rounded-t-lg">
                 <img src="https://randomuser.me/api/portraits/lego/8.jpg" class="w-20 h-20 rounded-full mx-auto mb-4 outline-8 outline-[#2f1f45]">
                 <h2 class="text-xl font-bold text-white"><?= $user ?></h2>
