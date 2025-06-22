@@ -36,7 +36,7 @@ $todos = mysqli_query($conn, "SELECT * FROM todos WHERE user_id = {$_SESSION['us
         </div>
 
         <!-- To-do List Area -->
-        <div class="w-2/3 p-8">
+        <div class="w-3/3 p-8 md:w-2/3">
             <h1 class="text-2xl font-bold mb-4">Daftar Tugas</h1>
 
             <!-- Form Tambah -->

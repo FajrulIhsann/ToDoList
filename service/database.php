@@ -1,7 +1,7 @@
 <?php 
 $hostname = "localhost";
 $username = "root";
-$password = "";
+$password = "casaos";
 $db_name = "todolist_db";
 
 $db = new mysqli($hostname, $username, $password, $db_name);
