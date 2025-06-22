@@ -13,6 +13,7 @@ if(isset($_SESSION["isLogin"]) == false){
 $user = $_SESSION['username']; // pastikan sudah login
 // Ambil data to-do user
 $todos = mysqli_query($conn, "SELECT * FROM todos WHERE user_id = {$_SESSION['user_id']} ORDER BY created_at DESC");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +50,7 @@ $todos = mysqli_query($conn, "SELECT * FROM todos WHERE user_id = {$_SESSION['us
             <ul class="space-y-3">
                 <?php while ($row = mysqli_fetch_assoc($todos)) : ?>
                     <li class="bg-white p-4 rounded shadow flex justify-between items-center">
-                    <form action="service/checkToggle.php" method="post" class="flex items-center gap-2">
+                    <form action="service/checkToggle.php" method="post" class="flex items-center gap-2" name="checkbox">
                         <input type="hidden" name="id" value="<?= $row['id'] ?>">
                         <input type="checkbox" class="cursor-pointer hover:scale-125 transition-all transition-discrete" name="status" onchange="this.form.submit()" <?= $row['status'] === 'done' ? 'checked' : '' ?>>
                          <span class="transition-all duration-300 <?= $row['status'] === 'done' ? 'line-through text-gray-500' : '' ?>">

@@ -1,5 +1,5 @@
 <?php 
-$hostname = "localhost";
+$hostname = "localhost:3306";
 $username = "root";
 $password = "casaos";
 $db_name = "todolist_db";
