@@ -32,4 +32,10 @@ CREATE TABLE todos (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+# Step Ketiga
+Pada service/database.php
+```
+$hostname = "yourhost";
+```
+ubah your host menjadi host kamu
 
