@@ -33,9 +33,10 @@ CREATE TABLE todos (
 );
 ```
 # Step Ketiga
-Pada service/database.php
+Setup service/database.php
 ```
 $hostname = "yourhost";
+$password = "yourpassword";
 ```
-ubah your host menjadi host kamu
+sesuaikan nama dan password database dengan milik kamu
 
